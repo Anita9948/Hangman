@@ -27,6 +27,30 @@ const acbLetters = [
   "Z",
 ];
 
+const randomWord = [
+  "thumps",
+  "trips",
+  "gores",
+  "toddy",
+  "locked",
+  "gait",
+  "coble",
+  "prone",
+  "cranes",
+  "films",
+];
+
+const letterTracker = [];
+
+function gameStart() { 
+const genNum = () => Math.floor(Math.random() * randomWord.length);
+
+}
+
+
+
+
+
 function render() {
   for (let i = 0; i < acbLetters.length; i++) {
     const pickedLetters = document.createElement("div");
@@ -35,6 +59,3 @@ function render() {
   }
 }
 render();
-document
-  .getElementById("main-letters")
-  .addEventListener("click", (e) => console.log(e.target));
