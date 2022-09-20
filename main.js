@@ -40,16 +40,10 @@ const randomWord = [
   "films",
 ];
 
-const letterTracker = [];
+const displayMessage = "Try Again";
 
-function gameStart() { 
 const genNum = () => Math.floor(Math.random() * randomWord.length);
-
-}
-
-
-
-
+const answer = randomWord[genNum()];
 
 function render() {
   for (let i = 0; i < acbLetters.length; i++) {
@@ -59,3 +53,22 @@ function render() {
   }
 }
 render();
+
+function createSpan() {
+  for (let j = 0; j < answer.length; j++) {
+    const span = document.createElement("span");
+    span.innerText = answer[j];
+    document.querySelector(".word").append(span);
+  }
+}
+createSpan();
+
+function handleClick(e) {
+  console.log(e.target);
+}
+
+document.getElementById("main-letters").addEventListener("click", handleClick);
+
+
+
+
