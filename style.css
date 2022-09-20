@@ -11,13 +11,13 @@ body {
 }
 
 #main-letters {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   height: 100px;
-  position: absolute;
-  left: 450px;
-  right: 450px;
-  bottom: 185px;
+   position: absolute; 
+   left: 450px;
+  right: 450px; 
+   bottom: 185px; 
 }
 #main-letters div {
   outline: rgba(12, 3, 3, 0.13) solid 3px;
@@ -79,11 +79,23 @@ h3 {
 #incorrect {
   outline: rgba(185, 175, 175, 0) solid 5px;
   height: 85px;
-  width: 100px;
-  position: absolute;
+  margin: auto;
+  margin-bottom: 20px;
   right: 780px;
   border-radius: 25px;
   padding: 5px;
   color: rgb(238, 163, 192);
   font-weight: 900;
+}
+.word{
+    margin-top: 12px;
+}
+
+span{
+    outline: rgba(185, 175, 175, 0.425) solid 5px;
+    font-size: 50px;
+    margin: 20px;
+    padding: 20px;
+    visibility: hidden;
+
 }
