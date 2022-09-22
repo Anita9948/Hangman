@@ -44,7 +44,7 @@ let totalNumberGuesses = 6;
 let displayMessage;
 
 const genNum = () => Math.floor(Math.random() * randomWord.length);
-let answer = randomWord[genNum()];
+let secretWord = randomWord[genNum()];
 init();
 
 function init() {
@@ -65,9 +65,9 @@ function render() {
 }
 
 function createHiddenWordEl() {
-  for (let i = 0; i < answer.length; i++) {
+  for (let i = 0; i < secretWord.length; i++) {
     const span = document.createElement("span");
-    span.innerText = answer[i];
+    span.innerText = secretWord[i];
     document.querySelector(".word").append(span);
   }
 }
@@ -80,7 +80,7 @@ function removeAllSpanEls() {
 
 function isLetterInWord(cl) {
   let result = false;
-  for (let i = 0; i < answer.length; i++) {
+  for (let i = 0; i < secretWord.length; i++) {
     if (cl.textContent === answer[i].toUpperCase()) {
       result = true;
     }
@@ -133,7 +133,7 @@ function gameOver() {
 function resetGame(e) {
   console.log(e.target);
   totalNumberGuesses = 6;
-  answer = randomWord[genNum()];
+  secretWord = randomWord[genNum()];
   document.getElementById("main-letters").childNodes.forEach((div) => {
     div.style.color = "rgb(236, 170, 195)";
   });
