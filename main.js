@@ -44,30 +44,36 @@ let totalNumberGuesses = 6;
 let displayMessage;
 
 const genNum = () => Math.floor(Math.random() * randomWord.length);
-const answer = randomWord[genNum()];
+let answer = randomWord[genNum()];
 init();
 
 function init() {
   createDiv();
-  createSpan();
-
-  document
-    .getElementById("main-letters")
-    .addEventListener("click", handleClick);
+  createHiddenWordEl();
+  document.getElementById("main-letters").addEventListener("click", handleClick);
+  document.getElementById("reset").addEventListener("click", resetGame);
 }
 
+const messageEl = document.getElementById("incorrect");
 function render() {
-  document.getElementById("incorrect").innerText = isWon()
+  messageEl.innerText = isWon()
     ? "Winner"
     : `Remaining Guesses: ${totalNumberGuesses}`;
+  if (gameOver()) messageEl.innerText = "Game Over!";
 }
 
-function createSpan() {
+function createHiddenWordEl() {
   for (let i = 0; i < answer.length; i++) {
     const span = document.createElement("span");
     span.innerText = answer[i];
     document.querySelector(".word").append(span);
   }
+}
+
+function removeAllSpanEls() {
+  document.querySelectorAll("span").forEach((span) => {
+    span.remove();
+  });
 }
 
 function isLetterInWord(cl) {
@@ -96,7 +102,7 @@ function handleClick(e) {
   }
 
   e.target.style.color = isLetterInWord(curDiv) ? "green" : "red";
-
+  if (gameOver()) return;
   totalNumberGuesses--;
   render();
 }
@@ -119,7 +125,14 @@ function isWon() {
 }
 
 function gameOver() {
-  winner.forEach((span) => {
-    if ((span.style.visibility = "hidden")) return "Game Over";
-  });
+  return !isWon() && totalNumberGuesses === 0;
+}
+
+function resetGame(e) {
+  console.log(e.target);
+  totalNumberGuesses = 6;
+  answer = randomWord[genNum()];
+  removeAllSpanEls();
+  createHiddenWordEl();
+  render();
 }
