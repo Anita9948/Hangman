@@ -57,9 +57,9 @@ function init() {
 }
 
 function render() {
-  document.getElementById(
-    "incorrect"
-  ).innerText = `Remaining Guesses: ${totalNumberGuesses}`;
+  document.getElementById("incorrect").innerText = isWon()
+    ? "Winner"
+    : `Remaining Guesses: ${totalNumberGuesses}`;
 }
 
 function createSpan() {
@@ -90,12 +90,13 @@ function showMatchingSpans(spans, cl) {
 
 function handleClick(e) {
   let curDiv = e.target;
-  if (curDiv.style.color === "red" || curDiv.style.color === "green") return;
   const spanEls = document.querySelectorAll("span");
   if (isLetterInWord(curDiv)) {
     showMatchingSpans(spanEls, curDiv);
   }
+
   e.target.style.color = isLetterInWord(curDiv) ? "green" : "red";
+
   totalNumberGuesses--;
   render();
 }
@@ -108,9 +109,17 @@ function createDiv() {
   }
 }
 
+let winner = document.querySelectorAll("span");
+function isWon() {
+  let checking = 0;
+  winner.forEach((span) => {
+    if (span.style.visibility === "visible") checking++;
+  });
+  return checking === answer.length;
+}
 
-  let winner = document.querySelectorAll("span");
-  if (winner >= 0 && winner === "visible") {
-    displayMessage.innerText = "Winner";
-  }
-
+function gameOver() {
+  winner.forEach((span) => {
+    if ((span.style.visibility = "hidden")) return "Game Over";
+  });
+}
