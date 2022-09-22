@@ -51,10 +51,10 @@ This version of Hangman is slightly different in the sense that the user only ge
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1 - Reset Button.;\
-:heavy_check_mark: Feature 2 - Tracks number of guesses user has remainding.;\
-:heavy_check_mark: Feature 3- Displays winner or game over.;
-:heavy_check_mark: Feature 4 - CSS Styling.;\
+:heavy_check_mark: Feature 1 - Reset Button.\
+:heavy_check_mark: Feature 2 - Tracks number of guesses user has remainding.\
+:heavy_check_mark: Feature 3- Displays winner or game over.
+
 
 ## :rocket: Technologies ##
 
@@ -79,7 +79,7 @@ $ cd project-hangman
 
 # Drag and drop index.html in your browser.
 
-
+```
 
 ## :memo: License ##
 
