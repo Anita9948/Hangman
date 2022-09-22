@@ -61,7 +61,7 @@ function render() {
   messageEl.innerText = isWon()
     ? "Winner"
     : `Remaining Guesses: ${totalNumberGuesses}`;
-  if (gameOver()) messageEl.innerText = "Game Over!";
+  if (gameOver() && !isWon()) messageEl.innerText = "Game Over!";
 }
 
 function createHiddenWordEl() {
@@ -131,7 +131,6 @@ function gameOver() {
 }
 
 function resetGame(e) {
-  console.log(e.target);
   totalNumberGuesses = 6;
   secretWord = randomWord[genNum()];
   document.getElementById("main-letters").childNodes.forEach((div) => {
