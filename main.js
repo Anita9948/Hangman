@@ -50,7 +50,9 @@ init();
 function init() {
   createDiv();
   createHiddenWordEl();
-  document.getElementById("main-letters").addEventListener("click", handleClick);
+  document
+    .getElementById("main-letters")
+    .addEventListener("click", handleClick);
   document.getElementById("reset").addEventListener("click", resetGame);
 }
 
@@ -132,6 +134,9 @@ function resetGame(e) {
   console.log(e.target);
   totalNumberGuesses = 6;
   answer = randomWord[genNum()];
+  document.getElementById("main-letters").childNodes.forEach((div) => {
+    div.style.color = "rgb(236, 170, 195)";
+  });
   removeAllSpanEls();
   createHiddenWordEl();
   render();
