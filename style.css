@@ -85,5 +85,5 @@ span {
   font-size: 50px;
   margin: 20px;
   padding: 20px;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
