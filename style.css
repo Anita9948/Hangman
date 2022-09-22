@@ -14,10 +14,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   height: 100px;
-   position: absolute; 
-   left: 450px;
-  right: 450px; 
-   bottom: 185px; 
+  position: absolute;
+  left: 450px;
+  right: 450px;
+  bottom: 185px;
 }
 #main-letters div {
   outline: rgba(12, 3, 3, 0.13) solid 3px;
@@ -37,21 +37,10 @@ body {
   font-weight: 900;
   background-color: rgb(136, 199, 207);
   position: absolute;
-  left: 450px;
+  right: 750px;
   bottom: 50px;
   border-radius: 50px;
   font-size: 15px;
-}
-
-#hint {
-  border-radius: 50px;
-  font-size: 15px;
-  background-color: rgb(136, 199, 207);
-  outline: rgba(12, 3, 3, 0.315) solid 3px;
-  font-weight: 900;
-  position: absolute;
-  right: 450px;
-  bottom: 50px;
 }
 
 h1,
@@ -87,15 +76,14 @@ h3 {
   color: rgb(238, 163, 192);
   font-weight: 900;
 }
-.word{
-    margin-top: 12px;
+.word {
+  margin-top: 12px;
 }
 
-span{
-    outline: rgba(185, 175, 175, 0.425) solid 5px;
-    font-size: 50px;
-    margin: 20px;
-    padding: 20px;
-    visibility: hidden;
-
+span {
+  outline: rgba(185, 175, 175, 0.425) solid 5px;
+  font-size: 50px;
+  margin: 20px;
+  padding: 20px;
+  visibility: hidden;
 }

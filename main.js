@@ -41,6 +41,7 @@ const randomWord = [
 ];
 
 let totalNumberGuesses = 6;
+let displayMessage;
 
 const genNum = () => Math.floor(Math.random() * randomWord.length);
 const answer = randomWord[genNum()];
@@ -49,6 +50,7 @@ init();
 function init() {
   createDiv();
   createSpan();
+
   document
     .getElementById("main-letters")
     .addEventListener("click", handleClick);
@@ -106,7 +108,9 @@ function createDiv() {
   }
 }
 
-let winner = document.querySelectorAll("span");
-if (winner >= 0 && winner === "visible" ) {
-    
-} 
+
+  let winner = document.querySelectorAll("span");
+  if (winner >= 0 && winner === "visible") {
+    displayMessage.innerText = "Winner";
+  }
+
