@@ -81,7 +81,7 @@ function removeAllSpanEls() {
 function isLetterInWord(cl) {
   let result = false;
   for (let i = 0; i < secretWord.length; i++) {
-    if (cl.textContent === answer[i].toUpperCase()) {
+    if (cl.textContent === secretWord[i].toUpperCase()) {
       result = true;
     }
   }
@@ -123,7 +123,7 @@ function isWon() {
   winner.forEach((span) => {
     if (span.style.visibility === "visible") checking++;
   });
-  return checking === answer.length;
+  return checking === secretWord.length;
 }
 
 function gameOver() {
