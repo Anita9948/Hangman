@@ -18,7 +18,7 @@
 
   <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/project-hangman?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/project-hangman?color=56BEB8" /> -->
+<img alt="Github issues" src="file:///home/anita/Pictures/Screenshots/Screenshot%20from%202022-09-23%2011-21-09.png" /> 
 
   <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/project-hangman?color=56BEB8" /> -->
 
@@ -49,7 +49,7 @@
 
 Welcome to Hangman!
 This version of Hangman is slightly different in the sense that the user only gets 6 chances to guess the correct word.The words ranges from 4 letters to 6 letters. If a user is able to guess the word correctly within the 6 chances or less, they win the game.
-<img alt="screenshot1" src="file:///home/anita/Pictures/Screenshots/Screenshot%20from%202022-09-23%2011-21-09.png">
+<!-- <img alt="screenshot1" src="file:///home/anita/Pictures/Screenshots/Screenshot%20from%202022-09-23%2011-21-09.png"> -->
 
 ## :sparkles: Features
 
