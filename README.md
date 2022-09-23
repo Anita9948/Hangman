@@ -50,6 +50,8 @@
 Welcome to Hangman!
 This version of Hangman is slightly different in the sense that the user only gets 6 chances to guess the correct word.The words ranges from 4 letters to 6 letters. If a user is able to guess the word correctly within the 6 chances or less, they win the game.
 
+Link: git@github.com:Anita9948/Hangman.git 
+
 ## :sparkles: Features
 
 :heavy_check_mark: Feature 1 - Reset Button.\
