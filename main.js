@@ -140,3 +140,7 @@ function resetGame(e) {
   createHiddenWordEl();
   render();
 }
+
+
+
+
