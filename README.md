@@ -1,10 +1,11 @@
 <div align="center" id="top"> 
   <img src="./.github/app.gif" alt="Project Hangman" />
 
-  &#xa0;
+&#xa0;
 
   <!-- <a href="https://projecthangman.netlify.app">Demo</a> -->
 </div>
+ 
 
 <h1 align="center">Project Hangman</h1>
 
@@ -26,9 +27,9 @@
 
 <!-- Status -->
 
-<!-- <h4 align="center"> 
+<!-- <h4 align="center">
 	🚧  Project Hangman 🚀 Under construction...  🚧
-</h4> 
+</h4>
 
 <hr> -->
 
@@ -44,19 +45,19 @@
 
 <br>
 
-## :dart: About ##
+## :dart: About
 
-Welcome to Hangman! 
-This version of Hangman is slightly different in the sense that the user only gets 6 chances to guess the correct word.The words ranges from 4 letters to 6 letters. If a user is able to guess the word correctly within the 6 chances or less, they win the game. 
+Welcome to Hangman!
+This version of Hangman is slightly different in the sense that the user only gets 6 chances to guess the correct word.The words ranges from 4 letters to 6 letters. If a user is able to guess the word correctly within the 6 chances or less, they win the game.
+<img alt="screenshot1" src="file:///home/anita/Pictures/Screenshots/Screenshot%20from%202022-09-23%2011-21-09.png">
 
-## :sparkles: Features ##
+## :sparkles: Features
 
 :heavy_check_mark: Feature 1 - Reset Button.\
 :heavy_check_mark: Feature 2 - Tracks number of guesses user has remainding.\
 :heavy_check_mark: Feature 3- Displays winner or game over.
 
-
-## :rocket: Technologies ##
+## :rocket: Technologies
 
 The following tools were used in this project:
 
@@ -64,12 +65,11 @@ The following tools were used in this project:
 - [HTML](https://html.spec.whatwg.org/)
 - [CSS](https://www.w3.org/TR/CSS/#css)
 
-
-## :white_check_mark: Requirements ##
+## :white_check_mark: Requirements
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) installed.
 
-## :checkered_flag: Starting ##
+## :checkered_flag: Starting
 
 ```bash
 # Clone this project
@@ -79,12 +79,12 @@ $ cd project-hangman
 
 # Drag and drop index.html in your browser.
 
+
 ```
 
-## :memo: License ##
+## :memo: License
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
 
 Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{Anita Baljit}}</a>
 
