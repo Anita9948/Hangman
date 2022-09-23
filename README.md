@@ -59,7 +59,7 @@ This version of Hangman is slightly different in the sense that the user only ge
 ## :sparkles: IceBox Features
 
 :heavy_check_mark: Feature 1 - Timer.\
-:heavy_check_mark: Feature 2 - Hint Button.\
+:heavy_check_mark: Feature 2 - Hint Button.
 
 <img alt="screenshot1" src="images/Screenshot from 2022-09-23 11-21-09.png">
 
