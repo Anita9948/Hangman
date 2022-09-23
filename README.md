@@ -56,7 +56,10 @@ This version of Hangman is slightly different in the sense that the user only ge
 :heavy_check_mark: Feature 2 - Tracks number of guesses user has remainding.\
 :heavy_check_mark: Feature 3- Displays winner or game over.
 
-## :sparkles: IceBox Feature - Implement - Timer & Hint Button
+## :sparkles: IceBox Features
+
+:heavy_check_mark: Feature 1 - Timer.\
+:heavy_check_mark: Feature 2 - Hint Button.\
 
 <img alt="screenshot1" src="images/Screenshot from 2022-09-23 11-21-09.png">
 
