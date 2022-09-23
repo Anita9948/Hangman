@@ -57,7 +57,7 @@ This version of Hangman is slightly different in the sense that the user only ge
 :heavy_check_mark: Feature 2 - Tracks number of guesses user has remainding.\
 :heavy_check_mark: Feature 3- Displays winner or game over.
 
-<img alt="screenshot1" src="file:///home/anita/Pictures/Screenshots/Screenshot%20from%202022-09-23%2011-21-09.png">
+<img alt="screenshot1" src="images/Screenshot from 2022-09-23 11-21-09.png">
 
 ## :rocket: Technologies
 
