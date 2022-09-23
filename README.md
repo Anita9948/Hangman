@@ -5,7 +5,7 @@
 
   <!-- <a href="https://projecthangman.netlify.app">Demo</a> -->
 </div>
- 
+
 
 <h1 align="center">Project Hangman</h1>
 
@@ -50,12 +50,13 @@
 Welcome to Hangman!
 This version of Hangman is slightly different in the sense that the user only gets 6 chances to guess the correct word.The words ranges from 4 letters to 6 letters. If a user is able to guess the word correctly within the 6 chances or less, they win the game.
 
-
 ## :sparkles: Features
 
 :heavy_check_mark: Feature 1 - Reset Button.\
 :heavy_check_mark: Feature 2 - Tracks number of guesses user has remainding.\
 :heavy_check_mark: Feature 3- Displays winner or game over.
+
+IceBox Feature - Implement - Timer & Hint Button
 
 <img alt="screenshot1" src="images/Screenshot from 2022-09-23 11-21-09.png">
 

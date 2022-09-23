@@ -97,6 +97,7 @@ function showMatchingSpans(spans, cl) {
 }
 
 function handleClick(e) {
+  if(this === e.target) return
   let curDiv = e.target;
   const spanEls = document.querySelectorAll("span");
   if (isLetterInWord(curDiv)) {
