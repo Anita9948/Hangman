@@ -99,6 +99,7 @@ function showMatchingSpans(spans, cl) {
 function handleClick(e) {
   let curDiv = e.target;
   const spanEls = document.querySelectorAll("span");
+  if(e.target.style.color === 'red' || e.target.style.color === 'green') return
   if (isLetterInWord(curDiv)) {
     showMatchingSpans(spanEls, curDiv);
   }
